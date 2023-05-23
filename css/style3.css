@@ -1,0 +1,162 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #ff9797; /* Color de fondo */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #fff; /* Color de fondo */
+  border-radius: 4px;
+  text-align: center; /* Centrar el texto */
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.photo {
+  flex: 0 0 auto;
+  margin-right: 100px;
+}
+
+.photo img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.name {
+  flex: 1 1 auto;
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+.stickman {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.stickman .head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translateX(-50%);
+}
+.stickman .body {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 5px;
+  height: 50px;
+  background-color: black;
+}
+.stickman .arm {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  transform-origin: right center;
+  animation-name: wave-arm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes wave-arm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+.stickman .arm2 {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  transform-origin: left center;
+  animation-name: wave-arm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes wave-arm2 {
+  25% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+.stickman .leg {
+  position: absolute;
+  top: 70px;
+  left: 45%;
+  width: 5px;
+  height: 30px;
+  background-color: black;
+}
+.stickman .leg2 {
+  position: absolute;
+  top: 70px;
+  left: 55%;
+  width: 5px;
+  height: 30px;
+  background-color: black;
+}
