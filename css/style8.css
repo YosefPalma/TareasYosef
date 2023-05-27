@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: calc(25% - 40px);
+  max-width: 200px;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.item:hover .caption {
+  opacity: 1;
+}
+.caption2 {
+  display: block;
+  margin-top: 5px;
+}

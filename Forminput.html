@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="CSS/style5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+      <form>
+        <div class="header">
+          <h1>Pasaporte</h1>
+        </div>
+        <fieldset>
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" required >
+            </div>
+            <div class="input-wrapper">
+              <label for="surname">Apellido</label>
+              <input type="text" id="surname">
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="Email">Email<span>(Escribe un email valido)</span></label>
+            <input type="email" id="Email" required>
+          </div>
+          <div class="fieldset-wrapper2">
+
+                <div class="col-3">
+                  <div class="input-wrapper">
+                    <label for="input-data">Fecha de Nacimiento</label>
+                    <input type="date" id="input-data1">
+                  </div>
+                </div>
+          </div>
+          <form>
+            <label for="ciudad">Ciudad de nacimiento:</label>
+            <select id="ciudad" name="ciudad" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Merida">Merida</option>
+              <option value="Kanasin">Kanasin</option>
+              <option value="Muna">Muna</option>
+            </select><br><br>
+
+            <label for="pais">País de nacimiento:</label>
+            <select id="pais" name="pais" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Mexico">Mexico</option>
+              <option value="EEUU">EEUU</option>
+              <option value="España">España</option>
+            </select><br><br>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Mexicano">Mexicano</option>
+              <option value="Gringo XD">Gringo XD</option>
+              <option value="Español">Español</option>
+            </select><br><br>
+
+            <div class="input-wrapper">
+              <label for="Numeropasaporte">Numero de pasaporte</label>
+              <input type="number" id="pasaporte">
+            </div>
+
+            <label for="pais2">País donde se envio:</label>
+            <select id="pais2" name="pais" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Mexico">Mexico</option>
+              <option value="EEUU">EEUU</option>
+              <option value="España">España</option>
+            </select><br><br>
+          </form>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="input-data">Fecha de emision del pasaporte</label>
+                <input type="date" id="input-data2">
+              </div>
+            </div>
+
+                <div class="col-3">
+                  <div class="input-wrapper">
+                    <label for="input-data">Fecha de vencimiento del pasaporte</label>
+                    <input type="date" id="input-data3">
+                  </div>
+                </div>
+        </fieldset>
+        <div class="buttom">
+          <input type="submit" value="Guardar">
+        </div>
+
+      </form>  
+  </body>
+</html>
