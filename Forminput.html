@@ -1,97 +1,290 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <link rel="stylesheet" href="CSS/style5.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-      <form>
-        <div class="header">
-          <h1>Pasaporte</h1>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+    </div>
+    <div class="Todo">
+        <div class="fila">
+            <div class="peque">
+                <label for="Apellido">Apellido</label>
+            </div>
+            <div class="grande">
+                <input type="text" name="apellido" id="" placeholder="Apellido como se muestra en el pasaporte">
+            </div>
         </div>
-        <fieldset>
-          <div class="col-2">
-            <div class="input-wrapper">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" required >
+        <div class="fila">
+            <div class="peque">
+                <label for="nombre">Nombre</label>
             </div>
-            <div class="input-wrapper">
-              <label for="surname">Apellido</label>
-              <input type="text" id="surname">
+            <div class="grande">
+                <input type="text" name="nombre" id="" placeholder="Solo nombre">
             </div>
-          </div>
-          <div class="input-wrapper">
-            <label for="Email">Email<span>(Escribe un email valido)</span></label>
-            <input type="email" id="Email" required>
-          </div>
-          <div class="fieldset-wrapper2">
-
-                <div class="col-3">
-                  <div class="input-wrapper">
-                    <label for="input-data">Fecha de Nacimiento</label>
-                    <input type="date" id="input-data1">
-                  </div>
-                </div>
-          </div>
-          <form>
-            <label for="ciudad">Ciudad de nacimiento:</label>
-            <select id="ciudad" name="ciudad" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Merida">Merida</option>
-              <option value="Kanasin">Kanasin</option>
-              <option value="Muna">Muna</option>
-            </select><br><br>
-
-            <label for="pais">País de nacimiento:</label>
-            <select id="pais" name="pais" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Mexico">Mexico</option>
-              <option value="EEUU">EEUU</option>
-              <option value="España">España</option>
-            </select><br><br>
-
-            <label for="nacionalidad">Nacionalidad:</label>
-            <select id="nacionalidad" name="nacionalidad" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Mexicano">Mexicano</option>
-              <option value="Gringo XD">Gringo XD</option>
-              <option value="Español">Español</option>
-            </select><br><br>
-
-            <div class="input-wrapper">
-              <label for="Numeropasaporte">Numero de pasaporte</label>
-              <input type="number" id="pasaporte">
+            
+        </div>
+        <div class="fila">
+            <div class="peque">
+                <label for="fecha">Fecha de nacimiento</label>
             </div>
-
-            <label for="pais2">País donde se envio:</label>
-            <select id="pais2" name="pais" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Mexico">Mexico</option>
-              <option value="EEUU">EEUU</option>
-              <option value="España">España</option>
-            </select><br><br>
-          </form>
-
-            <div class="col-3">
-              <div class="input-wrapper">
-                <label for="input-data">Fecha de emision del pasaporte</label>
-                <input type="date" id="input-data2">
-              </div>
+            <!-- Dia, Mes, Año -->
+            <div class="grande tipoflex">
+                <select title="TEST1" class="form-select" id="day" name="day">
+                    <option value="">Día</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select title="TEST2" class="form-select" id="month" name="month">
+                    <option value="">Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <select title="TEST3" class="form-select" id="year" name="year">
+                    <option value="">Año</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
             </div>
-
-                <div class="col-3">
-                  <div class="input-wrapper">
-                    <label for="input-data">Fecha de vencimiento del pasaporte</label>
-                    <input type="date" id="input-data3">
-                  </div>
-                </div>
-        </fieldset>
-        <div class="buttom">
-          <input type="submit" value="Guardar">
+        </div>
+        <div class="fila">
+            <div class="peque">
+                <label for="ciudad">País de nacimiento</label>
+            </div>
+            <div class="grande tipoflex">
+                <select class="form-select" id="country" title="country">
+                    <option value="">País</option>
+                    <option value="AF">Mexico</option>
+                    <option value="Lo">EEUU</option>
+                    <option value="cF">España</option>
+                </select> 
+            </div>
+        </div>
+        <div class="fila">
+            <div class="peque">
+                <label for="nacionality">Nacionalidad</label>
+            </div>
+            <div class="grande">
+                <select name="nacionality" id="nacionality">
+                    <option value="">País</option>
+                    <option value="01">Mexicano</option>
+                    <option value="03">Gringo XD</option>
+                    <option value="A12">Español</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="fila">
+            <div class="peque">
+                <label for="form-passport">Numero de pasaporte</label>
+            </div>
+            <div class="grande">
+                <input type="number" name="form-passport" id="form-passport" placeholder="Numero de pasaporte">
+            </div>
         </div>
 
-      </form>  
-  </body>
+        <div class="fila">
+            <div class="peque">
+                <label for="form-passExpedition">País donde ha sido expedido su pasaporte</label>
+            </div>
+            <div class="grande">
+                <select name="form-passExpedition" id="form-passExpedition">
+                    <option value="">País</option>
+                    <option value="AF">Mexico</option>
+                    <option value="Lo">EEUU</option>
+                    <option value="cF">España</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div class="fila">
+            <div class="peque">
+                <label for="fecha">Fecha emisión del pasaporte</label>
+            </div>
+            <div class="grande tipoflex">
+                <select title="TEST1" class="form-select" id="expday" name="expday">
+                    <option value="">Día</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select title="TEST2" class="form-select" id="expmonth" name="expmonth">
+                    <option value="">Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <select title="TEST3" class="form-select" id="expyear" name="expyear">
+                    <option value="">Año</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="peque">
+                <label for="fecha">Fecha de expiración</label>
+            </div>
+            <div class="grande tipoflex">
+                <select title="TEST1" class="form-select" id="venday" name="venday">
+                    <option value="">Día</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select title="TEST2" class="form-select" id="venmonth" name="venmonth">
+                    <option value="">Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <select title="TEST3" class="form-select" id="venyear" name="venyear">
+                    <option value="">Año</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
 </html>
