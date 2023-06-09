@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .rojo{
+        color: red;
+    }
+    .fondodark{
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    .list{
+        font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    }
+    #testtext,#testtext2{
+        width: 15%;
+    }
+    #imgcontainer{
+        height: 20vh;
+        width: 20vw;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .textoArcoiris .rainbow-text {
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+</style>
+
+
+
+<body>
+    <p id="p1">¡Hola Mundo!</p>
+    <h1 id="titulo">Encabezado Viejo</h1>
+    <main>
+        <h1 class="rojo">TEST MAIN H1 CLASE ROJA</h1>
+        <p>TEST MAIN P</p>
+    </main>
+    <p class="fondodark">TEST FONDO 1</p>
+    <p class="fondodark">TEST FONDO 2</p>
+    <ul class="list">
+        <li>Lista desordenada #1</li>
+        <li>Lista desordenada #2</li>
+        <li>Lista desordenada #3</li>
+        <li>Lista desordenada #4</li>
+        <li>Lista desordenada #5</li>
+    </ul>
+    <form action="#" method="get" id="form1">
+        <label for="testtext">Test Alerta si el input está vacio</label><br>
+        <input type="text" name="testtext" id="testtext" placeholder="Deja vacio para activar la Alerta">
+        <input type="submit" value="ENVIAR" id="btnSubmit">
+    </form>
+    <form action="#" method="get" id="form2">
+        <label for="testtext2">Test X &gt; 0 && x &lt; 10]</label> <br>
+        <input type="text" name="testtext2" id="testtext2" placeholder="Inserta un numero del 1 al 10">
+        <input type="submit" value="Comprobar" id="btnSubmit2">
+    </form>
+    <label for="colourInput">Color</label>
+    <input type="color" name="colourInput" id="colourInput" value="#ffffff"><br>
+    <div id="imgcontainer" onclick="ChangePicture()">
+        <img id="imgT" src="Sisoy.jpg" alt="">
+    </div>
+    <p class="textoArcoiris">Click en la imagen para CAMBIAR</p>
+    <h2 id="timelabel">HORA ACTUAL:</h2>
+</body>
+
+<script>
+    /*Busqueda por nombre de etiqueta*/
+    document.getElementById("p1").innerHTML="¡Nuevo Texto!";
+    document.getElementById("titulo").innerHTML="¡Encabezado nuevo!";
+    /* Busqueda por nombre de clases*/
+    const x = document.getElementsByTagName("main");
+    console.log(x);
+    const y = document.getElementsByTagName("p");
+    console.log(y);
+    /*Encontrar por nombrede clases*/
+    const z = document.getElementsByClassName("rojo");
+    console.log(z);
+    /*Busqueda de elementos HTML mediante selectores de CSS*/
+    const a = document.querySelectorAll("p.fondoverde");
+    //Devuelve todos los HIJOS de una lista desordenada
+    const b = document.querySelectorAll("ul > li");
+    console.log(b);
+    //Imprime el primer elemento H1
+    const c = document.querySelector("h1");
+    console.log(c);
+    //Encuentra un elemento con la clase list
+    const d = document.querySelector(".list");
+    console.log(d);
+
+    //Iterar los elementos <li> usando el ciclo ForEach()
+        console.log("INICIO FOREACH");
+    const listaDeElementos = document.querySelectorAll("ul > li");
+        listaDeElementos.forEach((item) => {
+            console.log(item);
+           
+        });
+        console.log("FINAL FOREACH");
+
+        //CAMBIAR ESTILOS DE CSS CON JS
+        const h1 = document.querySelector("h1");
+        h1.style.color = "purple";
+
+        //Agregar nuevos elementos HTML.
+        let lista = document.createElement("ul");
+        document.body.appendChild(lista);
+
+        let elemento1 = document.createElement("li");
+        elemento1.textContent="Flor";
+        lista.appendChild(elemento1);
+       
+        let elemento2 = document.createElement("li");
+        elemento2.textContent="Jaguar";
+        lista.appendChild(elemento2);
+
+        //Escuchar eventos en la pagina
+        var colourInput = document.getElementById('colourInput');
+        document.body.style.backgroundColor = colourInput.value;
+        colourInput.addEventListener("input",function(){
+            document.body.style.backgroundColor = colourInput.value;
+        });
+
+        //Validación input vacio
+        let botonSubmit = document.getElementById('btnSubmit');
+        botonSubmit.addEventListener("click", () =>{
+            let x = document.forms["form1"]["testtext"].value;
+            if(x === ""){
+                alert("Se debe completar el nombre");
+                return false;
+            }
+        });
+
+        //Validación numero
+        let botonSubmit2 = document.getElementById('btnSubmit2');
+        botonSubmit2.addEventListener("click", () =>{
+            let x = document.forms["form2"]["testtext2"].value
+            if (isNaN(x) || x < 1 || x > 10){
+                alert("Entrada no valida");
+                return false;
+            }else{
+                alert("Correcto");
+                return false
+            }
+            return false;
+        })
+        //Cambiar imagen
+        function ChangePicture(x){
+            document.getElementById('imgT').src = linksT[Math.floor(Math.random()*linksT.length)];
+            console.log(document.getElementById('imgT').src);
+        }
+        //Poner fecha actual
+        document.getElementById("timelabel").innerHTML = "Hora actual: " + Date();
+
+        const linksT = [
+        "Open1.png",
+        "Open2.png",
+        "Open3.png",
+        "Open4.png",
+        "Open5.png",
+        "Open6.png",
+        "Open7.png"
+        ]
+
+</script>
+</html>
