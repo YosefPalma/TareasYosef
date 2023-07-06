@@ -1,0 +1,96 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globales */
+
+  .Up {
+    background-color: #000000;
+    padding: 1px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .left,
+  .right {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .left {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .right {
+    flex: 2;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  textarea {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #0095ff;
+    border-radius: 3px;
+    resize: none;
+  }
+  
+  #msg {
+    margin-top: 10px;
+    color: red;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(150deg, #29FF7F 0%, #97F6EB 100%);
+    box-shadow: 0px 4px 4px 0px #1E7FB6, 0px 4px 4px 0px #97F6EB;
+    }
+  button[type="submit"]:hover {
+         background-color: #000000;
+        }
+  
+
+  
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left,
+    .right {
+      margin-right: 0;
+    }
+  
+    .right {
+      margin-top: 20px;
+    }
+  }

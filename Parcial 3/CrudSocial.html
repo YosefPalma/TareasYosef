@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="all" href="../css/stylefondo.css" />
+</head>
+<body>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    
+    <div class="Up">
+        <h1>CRUD Red social</h1>
+    </div>
+
+    <div class="container">
+       <div class="left">
+        <form id="form">
+            <label>Escribe un comentario... (Max 100 caracteres)</label>
+            <br>
+            <textarea id="textarea" cols="30" rows="10" maxlength="100" onkeyup="updateCount()"></textarea>
+            <div id="count"></div>
+            <br>
+            <div id="msg"></div>
+            <button type="submit">Comentar</button>
+        </form>
+       </div> 
+       <div class="right">
+        <h3>Tus comentarios estan aqui</h3>
+        <div id="post">
+            <!-- <div>
+                <p>Comentario 1</p>
+                <span class="options">
+                    <i onclick="editpost(this)" class="fas fa-edit"></i>
+                    <i onclick="deletepost(this)" class="fas fa-trash-alt"></i>
+                </span>
+            </div> -->
+        </div>
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
