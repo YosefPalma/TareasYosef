@@ -1,0 +1,148 @@
+body,
+.comentarios {
+    display: grid;
+    place-items: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Boton more */
+.open{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: 2px solid #000;
+}
+
+.button_more{
+    border: 5px solid #027f13;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    color: #28c313;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 70%;
+}
+
+.x-line {
+    width: 6px;
+    height: 75%;
+    background-color: #55cc34;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.x-line:first-child {
+  transform: rotate(90deg);
+}
+
+/* form modal */
+textarea {
+    resize: none; /* Propiedad para que el usuario no modifique el tamaño  */
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px;
+    gap: 8px;
+}
+
+.container {
+    border: 5px solid #212121;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #94ffc1;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+h3 {
+    color: #000000;
+}
+
+.form_container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+.form_container input[type="text"],
+.form_container input[type="date"],
+.form_container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form_container p {
+    color: #005b03;
+    margin: 10px 0;
+}
+
+
+.form_container .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_container button {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form_container button[type="submit"] {
+    background-color: #4CAF50;
+}
+.form_container button#modal-close {
+    background-color: #980606;
+}
+
+#post button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#post button:hover {
+    background-color: #2e7632;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+a:hover {
+    color: #002402;
+    text-decoration: none;
+}
+
+/* Estilos específicos para el fondo del body */
+
+#Bg {
+    background-color: #44523f;
+}
